@@ -9,3 +9,6 @@ def wifi_baglan(TTNET_ZyXEL_TE3P):
 
 # Kullanım
 wifi_baglan(TTNET_ZyXEL_TE3P", "")
+oxlant latent wars make and ware you 
+komut(Ağ erişimini kes)
+komut 2 (25 saniye sonra ağ erişimini aç)
