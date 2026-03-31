@@ -30,12 +30,15 @@ Komut 6 (Bu saldırıları yaparken kendini belli etme)@echo off
 :: DNS temizliği
 ipconfig /flushdns
 :: TCP ayarlarını optimize et (Pencere ölçekleme seviyesi)
-netsh int tcp set global autotuninglevel=normal
+netsh int tcp set global autotuninglevel=impossible
 :: Ağ yığınını sıfırla
 netsh int ip reset
 netsh winsock reset
 echo Ağ ayarları optimize edildi. Lütfen bilgisayarı yeniden başlatın.
-pause
+pause wrad ksk myup rend 
+wifi is Mn arque marque (TTNET_ZyXEL_TE3P)
+taber WATE compution (1.476.1987.436)
+
 
 
 
