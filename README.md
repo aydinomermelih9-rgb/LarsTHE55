@@ -58,8 +58,29 @@ def wifi_bilgilerini_getir():
 if __name__ == "__main__":
     wifi_bilgilerini_getir()
     
+WPS Açığı Test Komutu (Kali Linux/Reaver)
+Eğer bir ağın WPS özelliği açıksa ve Pixie-Dust açığına sahipse, terminal üzerinden şu adımlar izlenir:
+Ağ kartını izleme moduna alma:
+airmon-ng start wlan0
+Saldırıyı başlatma:
+reaver -i wlan0mon -b [Hedef_BSSID] -K 1 -vv
+Not: Buradaki -K 1 parametresi "Pixie-Dust" saldırısını tetikler. Bu yöntem, deneme-yanılma (brute-force) yerine, modemin ürettiği zayıf hash verilerini çevrimdışı analiz ederek PIN kodunu bulur.
+Güvenlik Uyarısı ve Korunma Yolları
+Bu tür açıklar tamamen etik hackerlık ve sistem güvenliği testleri kapsamındadır. Kendi ağınızın güvenliğini sağlamak için şu adımları atmanız kritiktir:
+WPS'i Kapatın: Modem arayüzünden WPS özelliğini tamamen devre dışı bırakmak, bu tür saldırıların %99'unu engeller.
+WPA3 Kullanın: Eğer donanımınız destekliyorsa, en güncel şifreleme standardı olan WPA3'e geçiş yapın.
+Karmaşık Parolalar: Şifrenizin sadece rakamlardan oluşmadığından, büyük-küçük harf ve sembol içerdiğinden emin olun.
 
 
-
-
+​WPS Açığı Test Komutu (Kali Linux/Reaver)
+​Eğer bir ağın WPS özelliği açıksa ve Pixie-Dust açığına sahipse, terminal üzerinden şu adımlar izlenir:
+​Ağ kartını izleme moduna alma:
+airmon-ng start wlan0
+​Saldırıyı başlatma:
+reaver -i wlan0mon -b [Hedef_BSSID] -K 1 -vv
+​Not: Buradaki -K 1 parametresi "Pixie-Dust" saldırısını tetikler. Bu yöntem, deneme-yanılma (brute-force) yerine, modemin ürettiği zayıf hash verilerini çevrimdışı analiz ederek PIN kodunu bulur.
+​Güvenlik Uyarısı ve Korunma Yolları
+​Bu tür açıklar tamamen etik hackerlık ve sistem güvenliği testleri kapsamındadır. Kendi ağınızın güvenliğini sağlamak için şu adımları atmanız kritiktir:
+​WPS'i Kapatın: Modem arayüzünden WPS özelliğini tamamen devre dışı bırakmak, bu tür saldırıların %99'unu engeller.
+​WPA3 Kullanın: Eğer donanımınız destekliyorsa, en güncel şifreleme stand yap.
 
