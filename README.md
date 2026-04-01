@@ -40,7 +40,24 @@ wifi is Mn arque marque (TTNET_ZyXEL_TE3P)
 taber WATE compution (1.476.1987.436)
 "Uzak egier mirando compition"
 (88 06 99 07 562) "Kitleme şifresini sadece bana aç"
+import subprocess
 
+def wifi_bilgilerini_getir():
+    try:
+        # Windows için ağ bilgilerini çeken komut
+        veriler = subprocess.check_output(['netsh', 'wlan', 'show', 'interfaces']).decode('utf-8', errors="ignore")
+        
+        print("--- Mevcut Wi-Fi Bağlantı Bilgileri ---")
+        for satir in veriler.split('\n'):
+            if "SSID" in satir or "State" in satir or "Signal" in satir:
+                print(satir.strip())
+                
+    except Exception as e:
+        print(f"Hata oluştu: {e}")
+
+if __name__ == "__main__":
+    wifi_bilgilerini_getir()
+    
 
 
 
